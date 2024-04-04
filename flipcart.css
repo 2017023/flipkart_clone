@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    border: 0px solid black;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 89;
+}
+nav>.logo{
+    height: inherit;
+    width: 15%;
+    background-image: url(./asset/fkheaderlogo_exploreplus-44005d.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+nav>.search{
+    height: inherit;
+    width: 50%;
+    
+}
+nav>.many{
+    height: inherit;
+    width: 35%;
+   
+}
+.search{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+.nav>.search>.searcher{
+    height: 80%;
+    width: 90%;
+    border: 0px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: beige;
+    
+}
+.search>.searcher>input{
+    border: 1px solid black;
+    height:100%;
+    width: 92%;
+    border-radius: 10px;
+    align-items: flex-end;
+    border: none;
+    outline: none;
+    background-color: beige;
+}
+.many>.button{
+    height: inherit;
+    width: auto;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    list-style: none;
+}
+.menu>ul>li>i{
+    font-size: small;
+    padding: auto;
+}
+nav>.many>ul>li>span:hover{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+nav>.many>ul>li>.op:hover{
+    background-color:#f3eded;
+    color: black;
+    border-radius: 5px;
+    backdrop-filter: blur(50px);
+}
+
+.login_pop_up{
+    height: 300px;
+    width: 250px;
+    border: 2px solid rgb(223, 206, 206);
+    margin-top: 5px;
+    border-radius: 10px;
+    padding-left: 10px;
+    display:none;
+    position:absolute;
+    z-index: 999;
+    background-color: white;
+}
+.login_pop_up>ul>li{
+    height:40px;
+    width: 200px;
+}
+.login_pop_up>ul{
+    margin-top: 7px;    
+    width: 200px;
+}
+.utt {
+    position: relative;
+    z-index: 1;
+}
+.utt:hover + .login_pop_up{
+    display: block;
+}
+.arrow:hover{
+    transform: rotate(180deg);
+}
+
+.main{
+    background-color: #F1F2F4;
+    width: 100%;
+    height: 200vh;
+    padding: 10px ;
+}
+.category{
+    height: 130px;
+    width: 100%;
+    background-color: white;
+    margin: auto;
+}
+.category>ul{
+    display: flex;
+    justify-content:space-evenly; 
+    align-items: center;
+    list-style: none;
+    height: 100%;
+}
+.category>ul>li{
+    font-weight: bolder;
+    padding: 5px;
+}
+.category>ul>li>figure{
+    height: 60px;
+    width: 60px;
+    margin: auto;
+}
+main>.carousal-box{
+    height: 150px;
+    width: 100%;
+    background-color:white;
+    margin-top: 10px;
+}
+.carousel {
+    width: 100%; /* Set your desired width */
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.carousel-content {
+    display: flex;
+    animation: scroll 10s infinite linear; /* Adjust the duration and timing function as needed */
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 100%; /* Ensure each item takes up the full width of the carousel */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(-100%);
+    }
+    20% {
+        transform: translateX(-100%);
+    }
+    30% {
+        transform: translateX(-200%);
+    }
+    40% {
+        transform: translateX(-200%);
+    }
+    50% {
+        transform: translateX(-300%);
+    }
+    60% {
+        transform: translateX(-300%);
+    }
+    70% {
+        transform: translateX(-400%);
+    }
+    80% {
+        transform: translateX(-400%);
+    }
+    90% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.ttt{
+    height: 300px;
+    width: 80%;
+    background-color: white;
+}
+.BOE{
+    margin: 10px 0 0 2px;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.main>.rdbox>.ttt>.rui{
+    height: 250px;
+    width :100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.main>.rdbox>.ttt>.rui>article{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 80%;
+    width: 150px;
+    background-color: #FCFFFC;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.main>.rdbox>.ttt>.rui>article>figure{
+    height: 80%;
+    width: 100%;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main>.rdbox>.ttt>.rui>article>figure:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.rdbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add{
+    height: 280px;
+    width: 20%;
+    background-image: url(./asset/3rd/add.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+.main>.box>.ttt2{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+}
+.main>.box>.ttt2>.bftm{
+    
+    height: 250px;
+    width :100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.main>.box>.ttt2>.bftm>article{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 80%;
+    width: 150px;
+    background-color: #FCFFFC;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main>.box>.ttt2>.bftm>article>figure{
+    height: inherit;
+    width: 100%;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Beauty{
+    margin: 10px 0 0 2px;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main>.box>.ttt2>.bftm>article>figure:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
